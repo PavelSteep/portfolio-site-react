@@ -45,6 +45,17 @@
   }
 }
 
+@media (max-width:308px){
+
+  .about_section h2{
+    font-size: clamp(18px, 6vw, 22px);
+    line-height:1.2;
+    text-align:center;
+    padding:0 10px;
+    word-break:break-word;
+  }
+}
+
 /* Section 3 */
 @media (min-width:320px){
   .menu_section .ads_box{
@@ -55,6 +66,48 @@
 @media (min-width:575px){
   .menu_section .ads_box{
     padding-top:75px !important;
+  }
+}
+
+/* Section 3 - ultra small screens */
+@media (max-width:258px){
+
+  .menu_section{
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .menu_section h2{
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 0 6px;
+    word-break: break-word;
+  }
+
+  .menu_section .menu_desc{
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 0 6px;
+    text-align: center;
+  }
+
+  .menu_section .ads_box{
+    padding: 15px 10px !important;
+    text-align: center;
+  }
+
+  .menu_section .ads_box h4{
+    font-size: 16px;
+  }
+
+  .menu_section .ads_box h5{
+    font-size: 14px;
+  }
+
+  .menu_section .btn_red{
+    font-size: 12px;
+    padding: 6px 10px;
   }
 }
 
@@ -72,6 +125,16 @@
   .prom-text h2{
     font-size:40px;
     padding-right:0!important;
+  }
+}
+
+@media (max-width:320px){
+  .prom-text h2{
+    font-size:28px;
+    line-height:1.2;
+    text-align:center;
+    word-break:break-word;
+    padding:0 10px;
   }
 }
 
@@ -113,6 +176,61 @@
   }
 }
 
+/* Section 5 - extra mobile adaptive */
+@media (max-width:388px){
+
+  .shop_section h2{
+    font-size:38px !important;
+    line-height:1.2;
+    font-weight:600;
+  }
+
+  .shop_section h4{
+    font-size:22px;
+  }
+
+  .shop_section p{
+    font-size:16px;
+    line-height:1.5;
+    padding:0 10px;
+  }
+
+  .shop_section .shop-elems{
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+  }
+
+  .shop_section .store{
+    width:180px;
+    max-width:100%;
+  }
+
+  .brand_section .brand_img img{
+    width:55px !important;
+  }
+}
+
+@media (max-width:254px){
+
+  .shop_section h2{
+    font-size:28px !important;
+    line-height:1.3;
+  }
+
+  .shop_section p{
+    font-size:14px;
+  }
+
+  .shop_section .store{
+    width:150px;
+  }
+
+  .brand_section .brand_img img{
+    width:42px !important;
+  }
+}
+
 /* BLOG */
 @media (max-width:480px){
   .blog_section .carousel-caption p{
@@ -127,3 +245,91 @@
     font-weight:400 !important;
   }
 }
+
+/* FOOTER MOBILE ADAPTIVE */
+@media (max-width:502px){
+
+  footer{
+    padding-top:50px;
+    text-align:center;
+  }
+
+  footer h5{
+    font-size:28px;
+    margin-bottom:15px;
+  }
+
+  footer p{
+    font-size:15px;
+    margin-bottom:12px;
+    line-height:1.5;
+  }
+
+  footer .calling{
+    font-size:22px;
+    display:inline-block;
+    margin-top:5px;
+  }
+
+  /* Отступы между колонками */
+  footer .col-lg-3{
+    margin-bottom:35px;
+  }
+
+  /* Социальные иконки */
+  footer .socials{
+    padding-left:0;
+    margin-top:15px;
+    flex-wrap:wrap;
+    gap:15px;
+  }
+
+  footer .socials li{
+    margin-left:0 !important;
+    font-size:28px;
+  }
+
+  /* Нижний copyright */
+  footer .copy_right{
+    padding-bottom:30px;
+    margin-top:10px;
+  }
+
+  footer .copy_right ul{
+    flex-direction:column;
+    align-items:center;
+    padding-left:0;
+    gap:12px;
+  }
+
+  footer .copy_right ul li{
+    margin-left:0 !important;
+    font-size:14px;
+    text-align:center;
+  }
+
+  footer .copy_right ul li span{
+    margin-right:0;
+    display:block;
+    line-height:1.6;
+  }
+
+  /* Убираем полоски | */
+  footer .copy_right ul li::after{
+    display:none;
+  }
+
+  /* Кнопка scroll top */
+  .scroll_top{
+    right:15px;
+    bottom:15px;
+    width:42px;
+    height:42px;
+    line-height:42px;
+  }
+
+  .scroll_top i{
+    font-size:18px;
+  }
+}
+

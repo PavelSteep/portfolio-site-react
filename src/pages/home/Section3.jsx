@@ -129,25 +129,32 @@ function Section3(){
           }
         </Row>
         <Row>
-          <Col lg={5}>
-            <div className="ads_box ads_img1">
-              <h4>Discover</h4>
-              <h5>Character Models</h5>
-              <Link className="btn_red">
-                View Gallery
-              </Link>
-            </div>
-          </Col>
-          <Col lg={7}>
-            <div className="ads_box ads_img2">
-              <h4>Explore</h4>
-              <h5>Environment Scenes</h5>
-              <Link className="btn_red">
-                See Details
-              </Link>
-            </div>
-          </Col>
-        </Row>
+  <Col xs={12} md={5} lg={5}>
+    <div className="ads_box ads_img1">
+      <a
+        className="btn_red"
+        href="https://www.artstation.com/community/projects/rlglwJ/edit"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Gallery
+      </a>
+    </div>
+  </Col>
+
+  <Col xs={12} md={7} lg={7}>
+    <div className="ads_box ads_img2">
+      <a
+        className="btn_red"
+        href="https://www.artstation.com/community/projects/y4doN9/edit"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        See Details
+      </a>
+    </div>
+  </Col>
+</Row>
       </Container>
     </section>
   );

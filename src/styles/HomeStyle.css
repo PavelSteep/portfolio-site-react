@@ -10,7 +10,7 @@
 .about_section h2{
   font-size:56px;
   font-weight:600;
-  color: #FFF8E1;
+  color:#FFF8E1;
 }
 
 .about_section p{
@@ -165,8 +165,15 @@
 }
 
 .menu_section .ads_box{
-  text-align:right;
-  padding:75px 10px;
+  width: 100%;
+  min-height: 450px; /* или больше */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  border-radius: 16px;
 }
 
 .menu_section .ads_img1{
@@ -218,9 +225,9 @@
 }
 
 .prom-text h2{
-  color:var(--light-black);
-  font-size:52px;
-  padding-right:90px;
+  color: var(--light-black);
+  font-size: clamp(28px, 4vw, 52px);
+  padding-right: 90px;
 }
 
 .prom-text p{
@@ -464,7 +471,13 @@ footer .copy_right ul li + li{
 }
 
 footer .copy_right ul li span{
-  margin-right:128px;
+  margin-right:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  width:100%;
+  line-height:1.6;
 }
 
 footer .copy_right ul li span i{
@@ -500,6 +513,11 @@ footer .copy_right ul li:last-child::after{
 
 .scroll_top i{
   color:var(--white);
+}
+
+.socials{
+  list-style:none;
+  padding-left:0;
 }
 
 /* Параллакс */
