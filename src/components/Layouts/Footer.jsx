@@ -48,7 +48,7 @@ function Footer() {
                 <p>My number phone</p>
                 <p>
                   <a href="tel:+380664637942" className="calling">
-                    066-463-7942
+                    {/* 066-463-7942 */}
                   </a>
                 </p>
               </div>

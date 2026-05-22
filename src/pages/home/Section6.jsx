@@ -1,10 +1,10 @@
 import React from 'react';
 import {Container, Row, Col, Carousel} from 'react-bootstrap';
 
-import User1 from '../../assets/blog/review-author-1.jpg';
-import User2 from '../../assets/blog/review-author-2.jpg';
-import User3 from '../../assets/blog/review-author-3.jpg';
-import User4 from '../../assets/blog/review-author-4.jpg';
+import User1 from '../../assets/blog/review-author-1.png';
+import User2 from '../../assets/blog/review-author-2.png';
+import User3 from '../../assets/blog/review-author-3.png';
+import User4 from '../../assets/blog/review-author-4.png';
 
 function Section6(){
   return (

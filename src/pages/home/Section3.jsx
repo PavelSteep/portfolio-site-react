@@ -16,39 +16,39 @@ const burgerData = [
   {
     id:'0001',
     image:Image1,
-    title:'Character 3D model',
-    paragraph:'European brown Cossack armed with a saber',
+    title:'Character 3D low poly',
+    paragraph:'Saber of the European Cossack',
     rating:5,
     price:2026
   },
   {
     id:'0002',
     image:Image2,
-    title:'Low poly 3D model mesh',
-    paragraph:'European brown Cossack armed with a saber',
+    title:'Character 3D low poly',
+    paragraph:'Rifle of the European Cossack',
     rating:5,
     price:2026
   },
   {
     id:'0003',
     image:Image3,
-    title:'Character 3D model',
-    paragraph:'European green Cossack armed with a rifle',
+    title:'Character 3D low poly',
+    paragraph:'Rifle of the European Cossack',
     rating:5,
     price:2026
   },
   {
     id:'0004',
     image:Image4,
-    title:'Low poly 3D model mesh',
-    paragraph:'European green Cossack armed with a rifle',
+    title:'Character 3D low poly',
+    paragraph:'Saber of the European Cossack',
     rating:5,
     price:2026
   },
   {
     id:'0005',
     image:Image5,
-    title:'Sabre Low poly 3D model',
+    title:'Low poly 3D model',
     paragraph:'Saber of the European Cossack',
     rating:5,
     price:2026
@@ -56,24 +56,24 @@ const burgerData = [
   {
     id:'0006',
     image:Image6,
-    title:'Low poly 3D model mesh',
-    paragraph:'Saber of the European Cossack',
+    title:'Low poly 3D model',
+    paragraph:'Musket of the European Cossack',
     rating:5,
     price:2026
   },
   {
     id:'0007',
     image:Image7,
-    title:'Musket Low poly 3D model',
-    paragraph:'Rifle of the European Cossack',
+    title:'Low poly 3D model',
+    paragraph:'RenderArtilleryCannon',
     rating:5,
     price:2026
   },
   {
     id:'0008',
     image:Image8,
-    title:'Low poly 3D model mesh',
-    paragraph:'Rifle of the European Cossack',
+    title:'Low poly 3D model',
+    paragraph:'Horse of the European Cossack',
     rating:5,
     price:2026
   },
