@@ -9,4 +9,11 @@ export default defineConfig({
     sourcemap: false,   // отключаем карты для стабильности
     minify: "terser",   // используем стабильный минификатор
   },
+  rollupOptions: {
+    output: {
+      manualChunks: {
+        vendor: ['react', 'react-dom', 'react-router-dom']
+      }
+    }
+  }
 });
