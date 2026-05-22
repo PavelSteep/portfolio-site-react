@@ -1,30 +1,23 @@
-import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import ThreeBackground from './ThreeBackground';
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import ThreeBackground from "./ThreeBackground";
 
 function Layout({ children }) {
   return (
     <>
-      {/* 🌌 WebGL BACKGROUND */}
       <ThreeBackground />
-
-      {/* 🧱 UI LAYER */}
       <div
         style={{
-          position: 'relative',
+          position: "relative",
           zIndex: 1,
-          minHeight: '100vh',
-          display: 'flex',
-          flexDirection: 'column',
+          minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
         <Header />
-
-        <main style={{ flex: 1 }}>
-          {children}
-        </main>
-
+        <main style={{ flex: 1 }}>{children}</main>
         <Footer />
       </div>
     </>

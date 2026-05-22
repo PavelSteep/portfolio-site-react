@@ -8,11 +8,19 @@ export default defineConfig({
     outDir: "dist",
     sourcemap: false,   // отключаем карты для стабильности
     minify: "terser",   // используем стабильный минификатор
-  },
-  rollupOptions: {
-    output: {
-      manualChunks: {
-        vendor: ['react', 'react-dom', 'react-router-dom']
+    chunkSizeWarningLimit: 1500,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            if (id.includes("react") || id.includes("react-dom") || id.includes("react-router-dom")) {
+              return "vendor-react";
+            }
+            if (id.includes("bootstrap")) {
+              return "vendor-bootstrap";
+            }
+          }
+        }
       }
     }
   }
