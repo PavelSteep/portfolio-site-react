@@ -24,6 +24,16 @@ footer, header, main, hgroup, menu, nav, section {
 	display: block;
 }
 
+/* Плавные переходы для всего сайта */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -99,4 +109,55 @@ a{
 .btn_red:hover{
   background:transparent;
   color:var(--light-red);
+}
+
+
+.order_btn,
+.btn_red {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.order_btn:hover,
+.btn_red:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+h1, h2 {
+  animation: titleFade 1s ease-out both;
+}
+
+@keyframes titleFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 20%, rgba(247,185,39,0.08), transparent 40%),
+              radial-gradient(circle at 80% 30%, rgba(227,0,14,0.06), transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.three-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
 }

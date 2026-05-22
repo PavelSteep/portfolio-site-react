@@ -1,0 +1,28 @@
+.about_section {
+  background: url(../assets/aboutme/about-21.png) center no-repeat;
+  background-size: cover;
+}
+
+.about_block {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.about_block h1 {
+  font-size: 52px;
+  margin-bottom: 30px;
+  font-family: var(--lilita);
+}
+
+.about_block p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #ddd;
+}

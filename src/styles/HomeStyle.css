@@ -33,6 +33,14 @@
   transform: scale(1.05);
 }
 
+/* About Wrapper */
+
+section,
+.container,
+.about_wrapper {
+  position: relative;
+  z-index: 1;
+}
 
 .about_wrapper{
   background:var(--yellow);
@@ -41,6 +49,8 @@
 
 .about_box > img{
   width:22%;
+  position: relative;
+  z-index: 2;
 }
 
 .about_box ~ h4{
@@ -61,6 +71,8 @@
 /* Section3 */
 .menu_section{
   padding:100px 0;
+  /* background: #050505; */
+  /* background: #fff; */
 }
 
 .menu_section .row:first-child > div{
@@ -411,6 +423,7 @@
 /* FOOTER */
 footer{
   padding-top:80px;
+  /* background: #fff !important; */
 }
 
 footer h5{
@@ -459,11 +472,21 @@ footer .copy_right{
 }
 
 footer .copy_right ul{
-  margin-top:30px;  
+  display: flex;
+  align-items: center;  
 }
 
 footer .copy_right ul li{
-  position:relative;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-right: 15px;
+  margin-right: 15px;
+  border-right: 1px solid #ddd;
+}
+
+footer .copy_right ul li:last-child {
+  border-right: none;
 }
 
 footer .copy_right ul li + li{
@@ -486,11 +509,12 @@ footer .copy_right ul li span i{
   font-style:normal;
 }
 
-footer .copy_right ul li::after{
-  content:'|';
-  padding-left:10px;
-  position:absolute;
-  right:-13px;
+footer .copy_right ul li::after {
+  content: '|';
+  position: absolute;
+  right: -13px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 footer .copy_right ul li:last-child::after{
