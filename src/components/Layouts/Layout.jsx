@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import ThreeBackground from "./ThreeBackground";
+// import ThreeBackground from "./ThreeBackground";
 
 function Layout({ children }) {
   return (
     <>
-      <ThreeBackground />
+      {/* <ThreeBackground /> */}
       <div
         style={{
           position: "relative",
