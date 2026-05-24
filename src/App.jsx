@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // ленивые импорты
 const Layout = React.lazy(() => import("./components/Layouts/Layout"));
 const Home = React.lazy(() => import("./pages/home/Home"));
-const About = React.lazy(() => import("./pages/about/About"));
+const About = React.lazy(() => import("./pages/About/About"));
 const Contact = React.lazy(() => import("./pages/contact/Contact"));
 
 function App() {
