@@ -2,13 +2,13 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
-  base: "/", // правильная база для Vercel
+  base: "/", // база для Vercel
   plugins: [react()],
-  assetsInclude: ["**/*.glb", "**/*.gltf"], // чтобы Vite не игнорировал модели
+  assetsInclude: ["**/*.glb", "**/*.gltf"], // поддержка моделей
   build: {
-    outDir: "dist", // папка для билда
-    sourcemap: false, // карты отключены для стабильности
-    minify: "terser", // стабильный минификатор
+    outDir: "dist", // папка билда
+    sourcemap: false, // отключаем карты для стабильности
+    minify: "terser", // минификатор
     chunkSizeWarningLimit: 1500,
     rollupOptions: {
       output: {
